@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Not So Smart House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="scrip.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Not So Smart House</div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Not So Smart House</h1>
+            <p>Welcome to Not So Smart House, where innovation meets absurdity! Our home appliances are designed to challenge conventional thinking, providing you with the most impractical yet entertaining household items.</p>
+            <p>Why choose us?</p>
+            <ul>
+                <li><strong>Microwave that Works When You Scream:</strong> Finally, a reason to yell in the kitchen!</li>
+                <li><strong>Kettle that Works in Silence:</strong> If you make a noise, it shuts off. Perfect for stealthy tea lovers.</li>
+                <li><strong>Fridge with Light That Turns Off When Open:</strong> Never see what’s inside again.</li>
+                <li><strong>Window Without Glass:</strong> The ultimate ventilation solution.</li>
+                <li><strong>Glass Without Window:</strong> Because why not?</li>
+            </ul>
+            <p>Our mission is to redefine home automation by making it completely unpredictable and impractical. If you love a challenge, our products are perfect for you!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Not So Smart House</p>
+        <button id="scrollToTop">Scroll to Top</button>
+    </footer>
+    <script>
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+</body>
+</html>

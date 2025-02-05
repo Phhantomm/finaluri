@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not So Smart House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="scrip.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Not So Smart House</div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="cookie-notification" class="cookie-notification">
+        <p>This website uses cookies to ensure you get the best experience. <button onclick="acceptCookies()">Accept</button></p>
+    </div>
+    <main>
+        <section class="products">
+            <h1>Our Not So Smart Products</h1>
+            <ul class="product-list">
+                <li class="product">
+                    <img src="images/microwave.jpg" alt="Microwave that Works When You Scream">
+                    <p>Microwave that Works When You Scream</p>
+                    <p>Forget buttons. Just yell and it heats!</p>
+                    <button onclick="buyProduct('Microwave that Works When You Scream')">Buy</button>
+                </li>
+                <li class="product">
+                    <img src="images/unnamed (1).jpg" alt="Kettle that Works in Silence">
+                    <p>Kettle that Works in Silence</p>
+                    <p>Don't make a sound, or it turns off!</p>
+                    <button onclick="buyProduct('Kettle that Works in Silence')">Buy</button>
+                </li>
+                <li class="product">
+                    <img src="images/unnamed (2).jpg" alt="Fridge with Light That Turns Off When Open">
+                    <p>Fridge with Light That Turns Off When Open</p>
+                    <p>Finally, a fridge that keeps secrets.</p>
+                    <button onclick="buyProduct('Fridge with Light That Turns Off When Open')">Buy</button>
+                </li>
+                <li class="product">
+                    <img src="images/noglass.jpg" alt="Window Without Glass">
+                    <p>Window Without Glass</p>
+                    <p>For ultimate fresh air experience.</p>
+                    <button onclick="buyProduct('Window Without Glass')">Buy</button>
+                </li>
+                <li class="product">
+                    <img src="images/unnamed.jpg" alt="Glass Without Window">
+                    <p>Glass Without Window</p>
+                    <p>For those who love holding empty frames.</p>
+                    <button onclick="buyProduct('Glass Without Window')">Buy</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Not So Smart House</p>
+        <button id="scrollToTop">Scroll to Top</button>
+    </footer>
+    <script>
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    </script>
+</body>
+</html>
